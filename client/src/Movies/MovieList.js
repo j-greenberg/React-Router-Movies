@@ -33,7 +33,8 @@ function MovieDetails({ movie }) {
   const { title, director, metascore, stars, id } = movie;
   console.log(id);
   return (
-    <Link to="/movies/:{id}">
+    
+    <Link to={`/movies/${id}`}>
     <div className="movie-card">
       <h2>{title}</h2>
       <div className="movie-director">
